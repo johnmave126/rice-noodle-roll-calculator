@@ -166,7 +166,6 @@ function reportAmount(area, thickness, metric, method) {
     const finalWaterVolume = area * thickness * SCALE['mm^3'];
     const starchVolume = finalWaterVolume / RATIO[method];
     const waterVolume = finalWaterVolume * EVAPORATE_COMPENSATE[method];
-    console.log(waterVolume);
     if(metric === 'Volume') {
         return (
             <div className="form-row" key="volume-report">
@@ -184,7 +183,6 @@ function reportAmount(area, thickness, metric, method) {
     else {
         const starchMass = starchVolume * STARCH_RHO;
         const waterMass = waterVolume * WATER_RHO;
-        console.log(waterMass);
         return (
             <div className="form-row" key="mass-report">
                 <div className="col-md-4 mb-3">
