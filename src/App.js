@@ -203,7 +203,7 @@ function reportAmount(area, thickness, metric, method) {
 function App() {
     const [container, setContainer] = useState('Plate');
     const [area, setArea] = useState(0);
-    const [thickness, setThickness] = useState(7);
+    const [thickness, setThickness] = useState(2.5);
 
     const [metric, setMetric] = useState('Volume');
     const [method, setMethod] = useState('Steam');
